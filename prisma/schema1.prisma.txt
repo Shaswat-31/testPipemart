@@ -1,0 +1,118 @@
+datasource db {
+  provider = "mysql"
+  url      = env("MYSQL_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id       Int      @id @default(autoincrement())
+  email    String   @unique
+  password String
+  role     UserRole @default(USER)
+}
+
+enum UserRole {
+  ADMIN
+  USER
+}
+
+model WordPress {
+  id           Int       @id @default(autoincrement())
+  username     String
+  password     String
+  country      String
+  language     String
+  url          String    @unique
+  slug         String    @unique
+  hostUrl      String?
+  databaseName String?
+  cities       City[]
+  products     Product[]
+}
+
+model PostData {
+  id        Int      @id @default(autoincrement())
+  postid    String   @unique
+  data      Json
+  modified  DateTime
+  slug      String
+  status    String
+  type      String
+  link      String
+}
+
+model City {
+  id          Int       @id @default(autoincrement())
+  cityName    String
+  state       String
+  postalCode  String
+  wordpress   WordPress @relation(fields: [wordpressId], references: [id])
+  wordpressId Int
+}
+
+model Product {
+  id          Int       @id @default(autoincrement())
+  productName String
+  price       Float
+  description String
+  category    String
+  wordpress   WordPress @relation(fields: [wordpressId], references: [id])
+  wordpressId Int
+}
+
+model Sites {
+  id          Int      @id @default(autoincrement())
+  title       String
+  url         String
+  productType String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Templates {
+  id        Int      @id @default(autoincrement())
+  post_id   Int
+  post_name String
+  url       String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Items {
+  id               Int      @id @default(autoincrement())
+  title            String
+  titleDescription String
+  topDescription   String
+  specification    Json
+  chemicalSpec     Json
+  mechanicalSpec   Json
+  advantage        String
+  application      String
+  choose           String
+  questions        Json
+  images           Json
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Cities {
+  id          Int      @id @default(autoincrement())
+  cityName    String
+  postalCode  String
+  state       String
+  country     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Image {
+  id        Int      @id @default(autoincrement())
+  imgId     Int
+  slug      String
+  link      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

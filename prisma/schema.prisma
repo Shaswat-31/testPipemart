@@ -1,0 +1,337 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  email    String   @unique
+  password String
+  role     UserRole @default(USER)
+}
+
+enum UserRole {
+  ADMIN
+  USER
+}
+
+model WordPress {
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  username     String
+  password     String
+  country      String
+  language     String
+  url          String    @unique
+  slug         String    @unique
+  hostUrl      String?   // Allow null values
+  databaseName String?   // Allow null values
+  wpuser       String?
+  wppass       String?
+  industry     Json?
+  temp_id      Int?
+  table_prefix String?
+  cities       City[]
+  products     Product[]
+}
+
+model PostData {
+  id              String        @id @default(auto()) @map("_id") @db.ObjectId
+  postid          String        @unique
+  data             Json   // This field will store your JSON object
+  modified         DateTime
+  slug             String
+  status           String
+  type             String
+  link             String
+}
+
+model City {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  cityName    String
+  state       String
+  postalCode  String
+  wordpress   WordPress @relation(fields: [wordpressId], references: [id])
+  wordpressId String    @db.ObjectId
+}
+
+model Product {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  productName String
+  price       Float
+  description String
+  category    String
+  wordpress   WordPress @relation(fields: [wordpressId], references: [id])
+  wordpressId String    @db.ObjectId
+}
+
+model Page {
+  id              String        @id @default(auto()) @map("_id") @db.ObjectId
+  date            DateTime
+  date_gmt        DateTime
+  guid            Guid
+  modified        DateTime
+  modified_gmt    DateTime
+  slug            String
+  status          String
+  type            String
+  link            String
+  title           Title
+  content         Content
+  excerpt         Excerpt
+  author          Int
+  featured_media  Int
+  parent          Int
+  menu_order      Int
+  comment_status  String
+  ping_status     String
+  template        String
+  meta            Meta
+  class_list      String[]
+  yoast_head      String
+  yoast_head_json YoastHeadJson
+  links           Links
+}
+
+type Guid {
+  rendered String
+}
+
+type Title {
+  rendered String
+}
+
+type Content {
+  rendered  String
+  protected Boolean
+}
+
+type Excerpt {
+  rendered  String
+  protected Boolean
+}
+
+type Meta {
+  footnotes String
+}
+
+type YoastHeadJson {
+  title                 String
+  description           String
+  robots                Robots
+  canonical             String
+  og_locale             String
+  og_type               String
+  og_title              String
+  og_description        String
+  og_url                String
+  og_site_name          String
+  article_modified_time String
+  og_image              OgImage[]
+  twitter_card          String
+  twitter_misc          Json
+  schema                Schema
+}
+
+type Robots {
+  index             String
+  follow            String
+  max_snippet       String @map("max-snippet")
+  max_image_preview String @map("max-image-preview")
+  max_video_preview String @map("max-video-preview")
+}
+
+type OgImage {
+  url String
+}
+
+type Schema {
+  context String @map("@context")
+  graph   Json[] @map("@graph")
+}
+
+type Links {
+  self                Link[]
+  collection          Link[]
+  about               Link[]
+  author              AuthorLink[]
+  replies             RepliesLink[]
+  version_history     VersionHistoryLink[]     @map("version-history")
+  predecessor_version PredecessorVersionLink[] @map("predecessor-version")
+  wp_attachment       Link[]                   @map("wp:attachment")
+  curies              CuriesLink[]
+}
+
+type Link {
+  href String
+}
+
+type AuthorLink {
+  embeddable Boolean
+  href       String
+}
+
+type RepliesLink {
+  embeddable Boolean
+  href       String
+}
+
+type VersionHistoryLink {
+  count Int
+  href  String
+}
+
+type PredecessorVersionLink {
+  id   Int
+  href String
+}
+
+type CuriesLink {
+  name      String
+  href      String
+  templated Boolean
+}
+
+model Sites {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String   
+  url         String   
+  productType String   
+
+  createdAt   DateTime @default(now()) 
+  updatedAt   DateTime @updatedAt      
+
+}
+model templates{
+  id                   String   @id @default(auto()) @map("_id") @db.ObjectId
+  post_id              Int
+  post_name            String
+  url                  String
+  wordpressId          String
+  entries          Entry[]
+  createdAt   DateTime @default(now()) 
+  updatedAt   DateTime @updatedAt  
+}
+
+model items{
+id          String   @id @default(auto()) @map("_id") @db.ObjectId
+title       String
+titleDescription String
+topDescription  String
+specification   Json
+chemicalSpec    Json
+mechanicalSpec  Json
+advantage       String
+application     String
+summary         String
+choose          String
+questions       Json
+images          Json
+createdAt       DateTime  @default(now())
+updatedAt       DateTime  @updatedAt   
+}
+
+model cities{
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+ cityName   String
+  country    String
+entries          Entry[]
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+model Image {
+   id          String   @id @default(auto()) @map("_id") @db.ObjectId
+   imgId      Int
+  slug       String
+  link       String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+}
+model category{
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+}
+
+model gradeProduct{
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  grades   Json
+}
+
+model grades{
+id          String   @id @default(auto()) @map("_id") @db.ObjectId
+title       String
+titleDescription String?
+topDescription  String?
+specification   Json
+chemicalSpec    Json
+mechanicalSpec  Json
+advantage       String
+application     String
+choose          String
+questions       Json
+images          Json
+industry         String[]
+applicationSummary String?
+createdAt       DateTime  @default(now())
+updatedAt       DateTime  @updatedAt   
+}
+
+model allproducts {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  title            String
+  titleDescription String?
+  topDescription   String?
+  chemicalSpec     Json
+  specification     Json
+  mechanicalSpec   Json
+  advantage        String?
+  application      String?
+  choose           String?
+  questions        Json
+  images           String[]
+  industry         String[]
+  applicationSummary String?
+  entries          Entry[]
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+}
+model productHeading{
+    id           String @id @default(auto()) @map("_id") @db.ObjectId
+    title        String
+    heading      Json
+}
+model seo{
+  id           String @id @default(auto()) @map("_id") @db.ObjectId
+  type         String
+  name        String
+  description  String
+  title        String
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+model Entry {
+  id          String       @id @default(auto()) @map("_id") @db.ObjectId
+  product     allproducts  @relation(fields: [productId], references: [id]) 
+  productId   String       @db.ObjectId                                    
+  city        cities       @relation(fields: [cityId], references: [id])
+  cityId      String       @db.ObjectId
+  template    templates    @relation(fields: [templateId], references: [id])
+  templateId  String       @db.ObjectId
+  status      Status       @default(NOT_PUBLISHED)
+  url         String
+
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+enum Status {
+  NOT_PUBLISHED
+  PENDING
+  PUBLISHED
+}

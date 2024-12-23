@@ -1,0 +1,85 @@
+{
+    "nav_menu[-5120706997177635000]": {
+        "value": {
+            "name": "TPM-Menu-Test-01",
+            "description": "",
+            "parent": 0,
+            "auto_add": false
+        },
+        "type": "nav_menu",
+        "user_id": 1,
+        "date_modified_gmt": "2024-11-20 15:05:31"
+    },
+    "nav_menu_item[-1015762083078236200]": {
+        "value": {
+            "object_id": 0,
+            "object": "custom",
+            "menu_item_parent": 0,
+            "position": 1,
+            "type": "custom",
+            "title": "Google",
+            "url": "https://www.google.com",
+            "target": "",
+            "attr_title": "",
+            "description": "",
+            "classes": "",
+            "xfn": "",
+            "status": "publish",
+            "original_title": "Google",
+            "nav_menu_term_id": -5120706997177635000,
+            "_invalid": false,
+            "type_label": "Custom Link"
+        },
+        "type": "nav_menu_item",
+        "user_id": 1,
+        "date_modified_gmt": "2024-11-20 15:05:31"
+    },
+    "nav_menu_item[-6675382213201641000]": {
+        "value": {
+            "object_id": 108641,
+            "object": "post",
+            "menu_item_parent": 0,
+            "position": 2,
+            "type": "post_type",
+            "title": "Styled test Shaswat 3",
+            "url": "https://tpm.secureclouddns.net/Shaswat-styled-post-test-3/",
+            "target": "",
+            "attr_title": "",
+            "description": "",
+            "classes": "",
+            "xfn": "",
+            "status": "publish",
+            "original_title": "Styled test Shaswat 3",
+            "nav_menu_term_id": -5120706997177635000,
+            "_invalid": false,
+            "type_label": "Post"
+        },
+        "type": "nav_menu_item",
+        "user_id": 1,
+        "date_modified_gmt": "2024-11-20 15:05:31"
+    },
+    "nav_menu_item[-284580695754285060]": {
+        "value": {
+            "object_id": 108649,
+            "object": "page",
+            "menu_item_parent": 0,
+            "position": 3,
+            "type": "post_type",
+            "title": "Styled test Shaswat 10",
+            "url": "https://tpm.secureclouddns.net/Shaswat-styled-post-test-10/",
+            "target": "",
+            "attr_title": "",
+            "description": "",
+            "classes": "",
+            "xfn": "",
+            "status": "publish",
+            "original_title": "Styled test Shaswat 10",
+            "nav_menu_term_id": -5120706997177635000,
+            "_invalid": false,
+            "type_label": "Page"
+        },
+        "type": "nav_menu_item",
+        "user_id": 1,
+        "date_modified_gmt": "2024-11-20 15:05:31"
+    }
+}

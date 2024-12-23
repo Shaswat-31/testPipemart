@@ -1,0 +1,119 @@
+{
+    "pipes":{
+    "Stainless Steel Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-11-1.jpg",
+    "Alloy Steel Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-10-1.jpg",
+    "Inconel Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-9-1.jpg",
+    "Hastelloy Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-8-1.jpg",
+    "Nickel Alloy Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-7-3.jpg",
+    "Duplex Steel Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-6-1.jpg",
+    "Super Duplex Steel Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-5-1.jpg",
+    "Monel Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-4-1.jpg",
+    "Titanium Pipe": "https://www.pipingmart.ae/wp-content/uploads/2024/03/Untitled-design-3-1.jpg",
+    "Copper Pipes": "https://www.pipingmart.ae/wp-content/uploads/2024/06/Copper-Pipes.jpg"
+    },
+    "flanges":{
+        "alloy steel flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/alloy-steel-flanges.jpg",
+        "Hastelloy flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Hastelloy-flanges.jpg",
+        "duplex flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/duplex-flanges.jpg",
+        "carbon flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/carbon-flanges-1.jpg",
+        "inconel flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/inconel-flanges.jpg",
+        "stainless steel flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/stainless-steel-flanges.jpg",
+        "super duplex steel flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/super-duplex-steel-flanges-1.jpg",
+        "monel flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/monel-flanges.jpg",
+        "Titanium flanges": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Titanium-flanges-1.jpg"
+    },
+    "round bar":{
+        "Duplex Steel Bars": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-11.jpg",
+        "Monel Bars": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-12.jpg",
+        "Duplex Bars": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-13.jpg",
+        "Hastelloy Bars": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-14.jpg",
+        "Alloy Steel Bars": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-15.jpg",
+        "Titanium Bars": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-16.jpg"
+    },
+    "Fasteners":{
+        "Copper Nickel Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Copper-Nickel-Fasteners.jpg",
+        "Duplex Steel Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Duplex-Steel-Fasteners.jpg",
+        "Hastelloy Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Hastelloy-Fasteners.jpg",
+        "Stainless Steel Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-Fasteners.jpg",
+        "Super Duplex Steel Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Super-Duplex-Steel-Fasteners-.jpg",
+        "Titanium Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Titanium-Fasteners.jpg",
+        "Inconel Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Inconel-Fasteners.jpg",
+        "Monel Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Monel-Fasteners.jpg",
+        "Nickel Alloy Fasteners": "https://www.pipingmart.ae/wp-content/uploads/2024/02/nickel-alloy-fasteners.png"
+    },
+    "Pipe Fittings":{
+        "ss pipe fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-22.jpg",
+        "Alloy Steel Pipe Fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-23.jpg",
+        "inconel Pipe fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-24.jpg",
+        "Hastelloy Pipe Fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-25.jpg",
+        "monel": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-26.jpg",
+        "Titanium Pipe Fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-27.jpg",
+        "cuni": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-28.jpg"
+    },
+    "Forged Fittings":{
+        "Stainless Steel Forged Fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/stainless-steel-pipe-fittings-1.jpg",
+        "Alloy steel pipe fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/stainless-steel-pipe-fittings-1-1.jpg",
+        "Inconel pipe fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/stainless-steel-pipe-fittings-2.jpg",
+        "Incoloy pipe fitting": "https://www.pipingmart.ae/wp-content/uploads/2024/02/incoloy.jpg",
+        "hastelloy pipe fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/hastelloy-1.jpg",
+        "Nickel Alloy Forged Fittings": "https://www.pipingmart.ae/wp-content/uploads/2024/02/nickel-alloy.jpg",
+        "Duplex steel pipe fitting": "https://www.pipingmart.ae/wp-content/uploads/2024/02/duplex-steel.jpg",
+        "Super duplex pipe fitting": "https://www.pipingmart.ae/wp-content/uploads/2024/02/super-duplex-steel.jpg",
+        "Monel pipe fitting": "https://www.pipingmart.ae/wp-content/uploads/2024/02/monel.jpg"
+    },
+    "Coils":{
+        "Stainless Steel Coils": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-2-2.jpg",
+        "Hastelloy Coils": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-3-2.jpg",
+        "Duplex Coils": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-4-1.jpg",
+        "Inconel Coils": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-5-2.jpg",
+        "Monel Coils": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-6-3.jpg",
+        "Super Duplex Steel Coils": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-7-1.jpg"
+    },
+    "Sheets & Plates":{
+        "Stainless Steel Sheet and Plates": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-5.jpg",
+        "Monel Sheet and Plates steel sheet": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-10.jpg",
+        "Hastelloy Sheet and Plates steel sheet": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-9.jpg",
+        "Carbon Steel Sheet and Plates steel sheet": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-8.jpg",
+        "Alloy steel sheet and Plates": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-7.jpg",
+        "Nickel Alloy Sheets and Plates": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-6.jpg",
+        "Titanium Sheets and Plates": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-4.jpg",
+        "Hardox sheet and Plates": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-3.jpg",
+        "Monel Sheets and Plates": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-2.jpg",
+        "Inconel Sheets and Plates": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Stainless-Steel-SheetPlates-steel-sheet-1.jpg"
+    },
+    "Tubes":{
+        "Stainless Steel Tubes": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-17-3.jpg",
+        "Inconel tubing": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-16-4.jpg",
+        "Hastelloy Tubing": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-15-4.jpg",
+        "Super Duplex Tubing": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-14-5.jpg",
+        "Nickel Alloy Tubing": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-13-4.jpg",
+        "Duplex Steel Tubes": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-12-4.jpg",
+        "Titanium Tubing": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-11-3.jpg",
+        "Monel Tubing": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-10-3.jpg"
+    },
+    "Nuts":{
+        "Stainless Steel Nuts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-10.jpg",
+        "Alloy Steel Nuts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-11-1.jpg",
+        "Inconel Nuts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-12-1.jpg",
+        "Hastelloy Nuts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-13-1.jpg",
+        "Monel Nuts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-14-2.jpg",
+        "Titanium Nuts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-15-1.jpg",
+        "Copper Nickel Nuts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-16-1.jpg"
+    },
+    "Stud Bolts":{
+        "Stainless Steel Stud Bolts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-8-2.jpg",
+        "Alloy Steel Stud Bolts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-9-1.jpg",
+        "Inconel Stud Bolts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-10-1.jpg",
+        "Hastelloy Stud Bolts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-11-2.jpg",
+        "Monel Stud Bolts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-12-2.jpg",
+        "Incoloy Stud Bolts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-13-2.jpg",
+        "Copper Nickel Stud Bolts": "https://www.pipingmart.ae/wp-content/uploads/2024/02/Untitled-design-14-3.jpg"
+    },
+    "Valves":{
+        "Alloy Steel Valves": "https://www.pipingmart.ae/wp-content/uploads/2024/05/Stainless-steel-Valve.jpg",
+        "Super Duplex Valves": "https://www.pipingmart.ae/wp-content/uploads/2024/05/Stainless-steel-Valve-1.jpg",
+        "Inconel Valves": "https://www.pipingmart.ae/wp-content/uploads/2024/05/Stainless-steel-Valve-3.jpg",
+        "Hastelloy Valves": "https://www.pipingmart.ae/wp-content/uploads/2024/06/Hastelloy-Valve.jpg",
+        "Monel Valves": "https://www.pipingmart.ae/wp-content/uploads/2024/06/Inconel-Valve.jpg"
+    }
+}
