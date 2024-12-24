@@ -350,6 +350,7 @@ export default function Home() {
           .replace(/Abu Dhabi/gi, entry.city.cityName)
           .replace(/Sharjah/gi, entry.city.cityName),
         placeholders: {
+          slug:productName.toLowerCase().replace(/\s+/g, "-"),
           category: categoryName,
           title: productName,
           city: entry.city.cityName,
@@ -497,6 +498,7 @@ export default function Home() {
                 .replace(/Abu Dhabi/gi, entry.city.cityName)
                 .replace(/Sharjah/gi, entry.city.cityName),
               placeholders: {
+                slug:gradeName.toLowerCase().replace(/\s+/g, "-"),
                 category: categoryName,
                 title: gradeName,
                 city: entry.city.cityName,
